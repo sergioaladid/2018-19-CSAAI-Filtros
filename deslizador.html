@@ -9,20 +9,18 @@
   <body onload="main();">
     <canvas id="display"></canvas>
     <img src="black-hole.jpg" id="imagesrc">
-    <p>Establece el umbral de rojo:</p>
-    <p>
-    <input type="range" id="deslizador" min="0" max="255" value="255"/>
-    <p id="range_value">00</p>
-    </p>
-    <p>
-    <input type="range" id="deslizador2" min="0" max="255" value="255"/>
-    <p id="range_value2">00</p>
-    </p>
-    <p>
-    <input type="range" id="deslizador3" min="0" max="255" value="255"/>
-    </p>
-    <p id="range_value3">00</p>
-    <p>Grises</p>
-    <button id="gris">Gris</button>
+    <img src="black-hole.jpg" id="imgnormal">
+    <div class="columna">
+      <p>Establece el umbral de RGB:</p>
+      <input type="range" id="deslizadorR" min="0" max="255" value="255"/>
+      <p id="range_valueR">00</p>
+      <input type="range" id="deslizadorG" min="0" max="255" value="255"/>
+      <p id="range_valueG">00</p>
+      <input type="range" id="deslizadorB" min="0" max="255" value="255"/>
+      <p id="range_valueB">00</p>
+      <p>Modos:</p>
+      <button id="gris">Gris</button>
+      <button id="normal">Original</button>
+    </div>
   </body>
 </html>
